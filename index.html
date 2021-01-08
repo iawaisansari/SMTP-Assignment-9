@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link href="./bootstrap-4.5.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div>
+        <h1 id="calculatorheading">Calculator</h1>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-7" id="calculator">
+                <input type="text" placeholder="000" id="result"><br>
+                <button onclick="clrdisp()" id="ac">AC</button><br>
+                <button onclick="onClickHandler(7)" id="digit">7</button>
+                <button onclick="onClickHandler(8)" id="digit">8</button>
+                <button onclick="onClickHandler(9)" id="digit">9</button>
+                <button onclick="onClickHandler('/')" id="operator">/</button><br>
+                <button onclick="onClickHandler(4)" id="digit">4</button>
+                <button onclick="onClickHandler(5)" id="digit">5</button>
+                <button onclick="onClickHandler(6)" id="digit">6</button>
+                <button onclick="onClickHandler('*')" id="operator">x</button><br>
+                <button onclick="onClickHandler(1)" id="digit">1</button>
+                <button onclick="onClickHandler(2)" id="digit">2</button>
+                <button onclick="onClickHandler(3)" id="digit">3</button>
+                <button onclick="onClickHandler('-')" id="operator">-</button><br>
+                <button onclick="onClickHandler('.')" id="digit">.</button>
+                <button onclick="onClickHandler(0)" id="digit">0</button>
+                <button onclick="eql('=')" id="equal">=</button>
+                <button onclick="onClickHandler('+')" id="operator">+</button><br>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
